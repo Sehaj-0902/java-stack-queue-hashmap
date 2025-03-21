@@ -13,7 +13,7 @@ public class StockSpanProblem {
             }
 
             if (stack.isEmpty()) {
-                span[i] = i+1;
+                span[i] = i + 1;
             }
             else {
                 span[i] = i - stack.peek();
@@ -23,6 +23,7 @@ public class StockSpanProblem {
         }
         return span;
     }
+
     public static void main(String[] args) {
         int[] stockPrices = {2, 10, 70, 36, 12, 143};
 
