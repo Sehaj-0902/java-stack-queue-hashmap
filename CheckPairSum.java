@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CheckPairSum {
+    // Method to check if pair with target sum exists
     static boolean pairExists(int[] array, int targetSum) {
         Map<Integer, Integer> map = new HashMap<>();
 
@@ -35,7 +36,8 @@ public class CheckPairSum {
 
         if (pairExists(array, targetSum)) {
             System.out.println("Pair with target sum " + targetSum + " exists.");
-        } else {
+        }
+        else {
             System.out.println("Pair with target sum " + targetSum + " does not exist.");
         }
     }
